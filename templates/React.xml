@@ -1,0 +1,10 @@
+<templateSet group="React">
+  <template name="rc" value="import React, {Component} from 'react';&#10;   &#10;class $componentName$ extends Component {&#10;    render() {&#10;        return (&#10;            $END$&#10;        );&#10;    }&#10;}&#10; &#10;export default $componentName$;&#10;" description="Creates a React component class" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>

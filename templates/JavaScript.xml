@@ -1,0 +1,14 @@
+<templateSet group="JavaScript">
+  <template name="cl" value="console.log($END$);" description="Inserts console.log() expression" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cli" value="console.group('$GROUP_NAME$');&#10;console.info('$MESSAGE$', $END$);&#10;console.groupEnd();" description="Inserts console.info() expression" toReformat="false" toShortenFQNames="true">
+    <variable name="GROUP_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
